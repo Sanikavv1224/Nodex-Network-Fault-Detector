@@ -1,0 +1,22 @@
+Held-out test accuracy (synthetic data): 100.0%
+
+Confusion matrix:
+             pred Normal  pred WiFi  pred Router  pred ISP
+true Normal           80          0            0         0
+true WiFi              0         80            0         0
+true Router            0          0           80         0
+true ISP               0          0            0        80
+
+              precision    recall  f1-score   support
+
+      Normal      1.000     1.000     1.000        80
+        WiFi      1.000     1.000     1.000        80
+      Router      1.000     1.000     1.000        80
+         ISP      1.000     1.000     1.000        80
+
+    accuracy                          1.000       320
+   macro avg      1.000     1.000     1.000       320
+weighted avg      1.000     1.000     1.000       320
+
+Note: tested on data from the same synthetic generator, so this is
+optimistic. See real-world hotspot tests for true performance.
